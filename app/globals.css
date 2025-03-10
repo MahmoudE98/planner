@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.inputstyle {
+  @apply w-[300px] border-gray-400 rounded-2xl py-2 px-6 bg-zinc-300/40;
+}
+
+.inputstyle input {
+  @apply focus:ring-2 focus:ring-zinc-300/40 focus:outline-none bg-zinc-300/10;
+}
+
+.inputstyle:hover {
+  @apply cursor-pointer;
+}
+
+/* Autofill Fix for Webkit (Chrome, Safari) */
+.inputstyle input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
+/* Autofill Fix for Firefox */
+.inputstyle input:-moz-autofill {
+  background-color: transparent !important;
+  color: inherit !important;
+}
